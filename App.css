@@ -1,0 +1,139 @@
+/* frontend/src/App.css */
+
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+}
+
+.container {
+  max-width: 650px;
+  margin: auto;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+.newHabit {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.newHabit input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.newHabit button {
+  padding: 10px 18px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.newHabit button:hover {
+  background: #0056b3;
+}
+
+.habit-card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 18px;
+  margin-bottom: 16px;
+  position: relative;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.habit-card h3 {
+  margin: 0 0 10px;
+}
+
+.streak {
+  color: #ff6600;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.habit-card button {
+  padding: 8px 14px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background: #28a745;
+  color: white;
+}
+
+.habit-card button:hover {
+  opacity: 0.9;
+}
+
+.habit-card button:disabled {
+  background: #6fbf73;
+  cursor: not-allowed;
+}
+
+.history {
+  display: flex;
+  gap: 5px;
+  margin: 15px 0;
+}
+
+.day {
+  width: 32px;
+  height: 32px;
+  background: #ddd;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.done {
+  width: 32px;
+  height: 32px;
+  background: #28a745;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.delete {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  background: transparent !important;
+  color: #666 !important;
+  border: none;
+}
+
+.delete:hover {
+  color: red !important;
+}
+
+@media (max-width: 600px) {
+  .newHabit {
+    flex-direction: column;
+  }
+
+  .newHabit button {
+    width: 100%;
+  }
+
+  .history {
+    flex-wrap: wrap;
+  }
+}
